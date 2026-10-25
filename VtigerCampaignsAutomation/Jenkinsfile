@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
 
@@ -25,14 +24,6 @@ pipeline {
         always {
             junit allowEmptyResults: true,
                   testResults: '**/target/surefire-reports/*.xml'
-        }
-
-        success {
-            echo 'Automation tests completed successfully.'
-        }
-
-        failure {
-            echo 'Build failed. Check Console Output for the error.'
         }
     }
 }
