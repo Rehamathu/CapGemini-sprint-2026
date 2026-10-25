@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Functional Testing" preserve-order="true">
+
+    <test name="CRM Functional Tests">
+
+        <groups>
+            <run>
+                <include name="Functional"/>
+            </run>
+        </groups>
+
+        <classes>
+            <!-- 1. Campaign CRUD -->
+            <class name="Campaigns.crud.CampaignPersistenceTest"/>
+            <class name="Campaigns.crud.CreateCampaignTest"/>
+            <class name="Campaigns.crud.ViewCampaignTest"/>
+            <class name="Campaigns.crud.EditCampaignTest"/>
+            <class name="Campaigns.crud.DuplicateCampaignTest"/>
+            <class name="Campaigns.crud.DeleteCampaignTest"/>
+
+            <!-- 2. Campaign dropdowns -->
+            <class name="Campaigns.dropdowns.AssignedToDropdownTest"/>
+            <class name="Campaigns.dropdowns.CampaignStatusTest"/>
+            <class name="Campaigns.dropdowns.CampaignTypeTest"/>
+            <class name="Campaigns.dropdowns.ExpectedResponseDropdownTest"/>
+
+            <!-- 3. Campaign search -->
+            <class name="Campaigns.search.SearchCampaignTest"/>
+            <class name="Campaigns.search.AdvancedSearchTest"/>
+            <class name="Campaigns.search.CampaignAlphabeticalNavigationTest"/>
+            <class name="Campaigns.search.CustomViewTest"/>
+
+            <!-- 4. Campaign smoke tests -->
+            <class name="Campaigns.smoke.CampaignNavigationTest"/>
+            <class name="Campaigns.smoke.CampaignsPageTest"/>
+
+            <!-- 5. Campaign validation -->
+            <class name="Campaigns.validation.CampaignDateValidationTest"/>
+            <class name="Campaigns.validation.MandatoryFieldsTest"/>
+
+            <!-- 6. Leads -->
+            <class name="Leads.LeadsNavigationTest"/>
+            <class name="Leads.LeadsPageTest"/>
+
+            <!-- 7. Trouble Tickets -->
+            <!-- Add your exact TroubleTickets class names here -->
+
+            <!-- 8. Dashboard -->
+            <class name="Dashboard.DashboardNavigationTest"/>
+            <class name="Dashboard.DashboardWidgetsTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>

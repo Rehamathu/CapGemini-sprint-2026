@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Testing" preserve-order="true">
+
+    <test name="CRM Smoke Tests">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="Campaigns.smoke.CampaignNavigationTest"/>
+            <class name="Campaigns.smoke.CampaignsPageTest"/>
+            <class name="Leads.LeadsNavigationTest"/>
+            <class name="TroubleTickets.TroubleTicketsNavigationTest"/>
+            <class name="Dashboard.DashboardNavigationTest"/>
+        </classes>
+    </test>
+
+</suite>

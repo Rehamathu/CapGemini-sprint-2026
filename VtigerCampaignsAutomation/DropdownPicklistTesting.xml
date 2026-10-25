@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Dropdown Picklist Testing" preserve-order="true">
+
+    <test name="Campaign Dropdown Tests">
+        <classes>
+            <class name="Campaigns.dropdowns.AssignedToDropdownTest"/>
+            <class name="Campaigns.dropdowns.CampaignStatusTest"/>
+            <class name="Campaigns.dropdowns.CampaignTypeTest"/>
+            <class name="Campaigns.dropdowns.ExpectedResponseDropdownTest"/>
+        </classes>
+    </test>
+
+</suite>

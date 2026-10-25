@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>TestNG:  Chrome Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 24 23:04:15 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>1848 seconds (1848377 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Campaigns.search.AdvancedSearchTest.verifyAdvancedSearchByCampaignName()'><b>verifyAdvancedSearchByCampaignName</b><br>Test class: Campaigns.search.AdvancedSearchTest</td>
+<td></td>
+<td>21</td>
+<td>Campaigns.search.AdvancedSearchTest@2362f559</td></tr>
+<tr>
+<td title='Dashboard.DashboardWidgetsTest.verifyLeadsBySourceDashboard()'><b>verifyLeadsBySourceDashboard</b><br>Test class: Dashboard.DashboardWidgetsTest</td>
+<td></td>
+<td>17</td>
+<td>Dashboard.DashboardWidgetsTest@24313fcc</td></tr>
+<tr>
+<td title='Campaigns.crud.EditCampaignTest.verifyCampaignCanBeEdited()'><b>verifyCampaignCanBeEdited</b><br>Test class: Campaigns.crud.EditCampaignTest</td>
+<td></td>
+<td>29</td>
+<td>Campaigns.crud.EditCampaignTest@710f4dc7</td></tr>
+<tr>
+<td title='Campaigns.search.SearchCampaignTest.verifyCampaignSearchByName()'><b>verifyCampaignSearchByName</b><br>Test class: Campaigns.search.SearchCampaignTest</td>
+<td></td>
+<td>17</td>
+<td>Campaigns.search.SearchCampaignTest@8297b3a</td></tr>
+<tr>
+<td title='Campaigns.smoke.CampaignsPageTest.verifyCampaignsPageNavigation()'><b>verifyCampaignsPageNavigation</b><br>Test class: Campaigns.smoke.CampaignsPageTest</td>
+<td></td>
+<td>6</td>
+<td>Campaigns.smoke.CampaignsPageTest@3bd82cf5</td></tr>
+<tr>
+<td title='Campaigns.validation.MandatoryFieldsTest.verifyCampaignCannotBeCreatedWithoutMandatoryFields()'><b>verifyCampaignCannotBeCreatedWithoutMandatoryFields</b><br>Test class: Campaigns.validation.MandatoryFieldsTest</td>
+<td></td>
+<td>11</td>
+<td>Campaigns.validation.MandatoryFieldsTest@247bddad</td></tr>
+<tr>
+<td title='Campaigns.smoke.CampaignNavigationTest.verifyNavigationToCampaigns()'><b>verifyNavigationToCampaigns</b><br>Test class: Campaigns.smoke.CampaignNavigationTest</td>
+<td></td>
+<td>8</td>
+<td>Campaigns.smoke.CampaignNavigationTest@fa4c865</td></tr>
+<tr>
+<td title='Campaigns.search.CampaignAlphabeticalNavigationTest.verifyAlphabeticalCampaignNavigation()'><b>verifyAlphabeticalCampaignNavigation</b><br>Test class: Campaigns.search.CampaignAlphabeticalNavigationTest</td>
+<td></td>
+<td>53</td>
+<td>Campaigns.search.CampaignAlphabeticalNavigationTest@b2c9a9c</td></tr>
+<tr>
+<td title='Campaigns.validation.CampaignDateValidationTest.verifyExpectedCloseDateFieldIsDisplayed()'><b>verifyExpectedCloseDateFieldIsDisplayed</b><br>Test class: Campaigns.validation.CampaignDateValidationTest</td>
+<td></td>
+<td>10</td>
+<td>Campaigns.validation.CampaignDateValidationTest@544fa968</td></tr>
+<tr>
+<td title='Campaigns.crud.ViewCampaignTest.verifyCampaignsListIsDisplayed()'><b>verifyCampaignsListIsDisplayed</b><br>Test class: Campaigns.crud.ViewCampaignTest</td>
+<td></td>
+<td>6</td>
+<td>Campaigns.crud.ViewCampaignTest@2925bf5b</td></tr>
+<tr>
+<td title='Campaigns.dropdowns.ExpectedResponseDropdownTest.verifyExpectedResponseOptions()'><b>verifyExpectedResponseOptions</b><br>Test class: Campaigns.dropdowns.ExpectedResponseDropdownTest</td>
+<td></td>
+<td>30</td>
+<td>Campaigns.dropdowns.ExpectedResponseDropdownTest@7817fd62</td></tr>
+<tr>
+<td title='Leads.LeadsPageTest.verifyLeadsSearchControls()'><b>verifyLeadsSearchControls</b><br>Test class: Leads.LeadsPageTest</td>
+<td></td>
+<td>10</td>
+<td>Leads.LeadsPageTest@7770f470</td></tr>
+<tr>
+<td title='Campaigns.crud.CampaignPersistenceTest.verifyCampaignListRemainsAvailableAfterNavigation()'><b>verifyCampaignListRemainsAvailableAfterNavigation</b><br>Test class: Campaigns.crud.CampaignPersistenceTest</td>
+<td></td>
+<td>9</td>
+<td>Campaigns.crud.CampaignPersistenceTest@477b4cdf</td></tr>
+<tr>
+<td title='Campaigns.search.CustomViewTest.verifyCampaignFilterChange()'><b>verifyCampaignFilterChange</b><br>Test class: Campaigns.search.CustomViewTest</td>
+<td></td>
+<td>11</td>
+<td>Campaigns.search.CustomViewTest@4c178a76</td></tr>
+<tr>
+<td title='Campaigns.crud.CreateCampaignTest.verifyCreateCampaignWithValidData()'><b>verifyCreateCampaignWithValidData</b><br>Test class: Campaigns.crud.CreateCampaignTest</td>
+<td></td>
+<td>26</td>
+<td>Campaigns.crud.CreateCampaignTest@45c7e403</td></tr>
+<tr>
+<td title='Leads.LeadsNavigationTest.verifyLeadsPageNavigation()'><b>verifyLeadsPageNavigation</b><br>Test class: Leads.LeadsNavigationTest</td>
+<td></td>
+<td>9</td>
+<td>Leads.LeadsNavigationTest@d35dea7</td></tr>
+<tr>
+<td title='Campaigns.dropdowns.AssignedToDropdownTest.verifyAssignedToDropdownOptions()'><b>verifyAssignedToDropdownOptions</b><br>Test class: Campaigns.dropdowns.AssignedToDropdownTest</td>
+<td></td>
+<td>46</td>
+<td>Campaigns.dropdowns.AssignedToDropdownTest@61322f9d</td></tr>
+<tr>
+<td title='Campaigns.crud.DuplicateCampaignTest.verifyDuplicateCampaignNamesCanBeCreated()'><b>verifyDuplicateCampaignNamesCanBeCreated</b><br>Test class: Campaigns.crud.DuplicateCampaignTest</td>
+<td></td>
+<td>44</td>
+<td>Campaigns.crud.DuplicateCampaignTest@1ff4931d</td></tr>
+<tr>
+<td title='Campaigns.dropdowns.CampaignStatusTest.verifyCampaignStatusOptions()'><b>verifyCampaignStatusOptions</b><br>Test class: Campaigns.dropdowns.CampaignStatusTest</td>
+<td></td>
+<td>33</td>
+<td>Campaigns.dropdowns.CampaignStatusTest@6ad82709</td></tr>
+<tr>
+<td title='Campaigns.crud.DeleteCampaignTest.verifyCampaignCanBeDeleted()'><b>verifyCampaignCanBeDeleted</b><br>Test class: Campaigns.crud.DeleteCampaignTest</td>
+<td></td>
+<td>5</td>
+<td>Campaigns.crud.DeleteCampaignTest@65e98b1c</td></tr>
+<tr>
+<td title='Campaigns.dropdowns.CampaignTypeTest.verifyCampaignTypeOptions()'><b>verifyCampaignTypeOptions</b><br>Test class: Campaigns.dropdowns.CampaignTypeTest</td>
+<td></td>
+<td>60</td>
+<td>Campaigns.dropdowns.CampaignTypeTest@510f3d34</td></tr>
+<tr>
+<td title='Campaigns.smoke.CampaignsPageTest.verifyCreateCampaignFormOpens()'><b>verifyCreateCampaignFormOpens</b><br>Test class: Campaigns.smoke.CampaignsPageTest</td>
+<td></td>
+<td>10</td>
+<td>Campaigns.smoke.CampaignsPageTest@3bd82cf5</td></tr>
+<tr>
+<td title='Dashboard.DashboardNavigationTest.verifyDashboardNavigation()'><b>verifyDashboardNavigation</b><br>Test class: Dashboard.DashboardNavigationTest</td>
+<td></td>
+<td>13</td>
+<td>Dashboard.DashboardNavigationTest@5e5d171f</td></tr>
+</table><p>
+</body>
+</html>

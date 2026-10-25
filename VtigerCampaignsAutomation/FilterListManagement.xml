@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Filter List Management" preserve-order="true">
+
+    <test name="Campaign Filter Tests">
+        <classes>
+            <class name="Campaigns.search.CustomViewTest"/>
+            <class name="Campaigns.search.SearchCampaignTest"/>
+            <class name="Campaigns.search.AdvancedSearchTest"/>
+        </classes>
+    </test>
+
+</suite>

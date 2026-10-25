@@ -1,0 +1,250 @@
+<html>
+<head>
+<title>TestNG:  CRM Functional Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CRM Functional Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>22/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 24 16:35:04 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>1719 seconds (1719734 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Functional </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Campaigns.crud.DeleteCampaignTest.verifyCampaignCanBeDeleted()'><b>verifyCampaignCanBeDeleted</b><br>Test class: Campaigns.crud.DeleteCampaignTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //table//a[normalize-space()=&apos;AutomationCampaign01&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\Amin\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63059}, goog:processID: 10952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63059/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a5c144874466d174f821c0b8303f90d6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Campaigns.crud.DeleteCampaignTest.verifyCampaignCanBeDeleted(DeleteCampaignTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1071439482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1071439482'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //table//a[normalize-space()=&apos;AutomationCampaign01&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\Amin\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63059}, goog:processID: 10952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63059/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a5c144874466d174f821c0b8303f90d6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Campaigns.crud.DeleteCampaignTest.verifyCampaignCanBeDeleted(DeleteCampaignTest.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>23</td>
+<td>Campaigns.crud.DeleteCampaignTest@2362f559</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Campaigns.validation.CampaignDateValidationTest.verifyExpectedCloseDateFieldIsDisplayed()'><b>verifyExpectedCloseDateFieldIsDisplayed</b><br>Test class: Campaigns.validation.CampaignDateValidationTest</td>
+<td></td>
+<td>9</td>
+<td>Campaigns.validation.CampaignDateValidationTest@7d20d0b</td></tr>
+<tr>
+<td title='Campaigns.crud.DuplicateCampaignTest.verifyDuplicateCampaignNamesCanBeCreated()'><b>verifyDuplicateCampaignNamesCanBeCreated</b><br>Test class: Campaigns.crud.DuplicateCampaignTest</td>
+<td></td>
+<td>35</td>
+<td>Campaigns.crud.DuplicateCampaignTest@8297b3a</td></tr>
+<tr>
+<td title='Dashboard.DashboardNavigationTest.verifyDashboardNavigation()'><b>verifyDashboardNavigation</b><br>Test class: Dashboard.DashboardNavigationTest</td>
+<td></td>
+<td>11</td>
+<td>Dashboard.DashboardNavigationTest@7bedc48a</td></tr>
+<tr>
+<td title='Campaigns.search.CustomViewTest.verifyCampaignFilterChange()'><b>verifyCampaignFilterChange</b><br>Test class: Campaigns.search.CustomViewTest</td>
+<td></td>
+<td>10</td>
+<td>Campaigns.search.CustomViewTest@7770f470</td></tr>
+<tr>
+<td title='Campaigns.crud.ViewCampaignTest.verifyCampaignsListIsDisplayed()'><b>verifyCampaignsListIsDisplayed</b><br>Test class: Campaigns.crud.ViewCampaignTest</td>
+<td></td>
+<td>7</td>
+<td>Campaigns.crud.ViewCampaignTest@510f3d34</td></tr>
+<tr>
+<td title='Campaigns.dropdowns.CampaignStatusTest.verifyCampaignStatusOptions()'><b>verifyCampaignStatusOptions</b><br>Test class: Campaigns.dropdowns.CampaignStatusTest</td>
+<td></td>
+<td>31</td>
+<td>Campaigns.dropdowns.CampaignStatusTest@4c178a76</td></tr>
+<tr>
+<td title='Campaigns.crud.EditCampaignTest.verifyCampaignCanBeEdited()'><b>verifyCampaignCanBeEdited</b><br>Test class: Campaigns.crud.EditCampaignTest</td>
+<td></td>
+<td>23</td>
+<td>Campaigns.crud.EditCampaignTest@7817fd62</td></tr>
+<tr>
+<td title='Campaigns.dropdowns.AssignedToDropdownTest.verifyAssignedToDropdownOptions()'><b>verifyAssignedToDropdownOptions</b><br>Test class: Campaigns.dropdowns.AssignedToDropdownTest</td>
+<td></td>
+<td>43</td>
+<td>Campaigns.dropdowns.AssignedToDropdownTest@b2c9a9c</td></tr>
+<tr>
+<td title='Campaigns.smoke.CampaignsPageTest.verifyCreateCampaignFormOpens()'><b>verifyCreateCampaignFormOpens</b><br>Test class: Campaigns.smoke.CampaignsPageTest</td>
+<td></td>
+<td>9</td>
+<td>Campaigns.smoke.CampaignsPageTest@24313fcc</td></tr>
+<tr>
+<td title='Dashboard.DashboardWidgetsTest.verifyLeadsBySourceDashboard()'><b>verifyLeadsBySourceDashboard</b><br>Test class: Dashboard.DashboardWidgetsTest</td>
+<td></td>
+<td>15</td>
+<td>Dashboard.DashboardWidgetsTest@131ef10</td></tr>
+<tr>
+<td title='Campaigns.dropdowns.CampaignTypeTest.verifyCampaignTypeOptions()'><b>verifyCampaignTypeOptions</b><br>Test class: Campaigns.dropdowns.CampaignTypeTest</td>
+<td></td>
+<td>54</td>
+<td>Campaigns.dropdowns.CampaignTypeTest@fa4c865</td></tr>
+<tr>
+<td title='Campaigns.smoke.CampaignNavigationTest.verifyNavigationToCampaigns()'><b>verifyNavigationToCampaigns</b><br>Test class: Campaigns.smoke.CampaignNavigationTest</td>
+<td></td>
+<td>6</td>
+<td>Campaigns.smoke.CampaignNavigationTest@5e5d171f</td></tr>
+<tr>
+<td title='Campaigns.search.AdvancedSearchTest.verifyAdvancedSearchByCampaignName()'><b>verifyAdvancedSearchByCampaignName</b><br>Test class: Campaigns.search.AdvancedSearchTest</td>
+<td></td>
+<td>20</td>
+<td>Campaigns.search.AdvancedSearchTest@247bddad</td></tr>
+<tr>
+<td title='Campaigns.dropdowns.ExpectedResponseDropdownTest.verifyExpectedResponseOptions()'><b>verifyExpectedResponseOptions</b><br>Test class: Campaigns.dropdowns.ExpectedResponseDropdownTest</td>
+<td></td>
+<td>28</td>
+<td>Campaigns.dropdowns.ExpectedResponseDropdownTest@3bd82cf5</td></tr>
+<tr>
+<td title='Leads.LeadsNavigationTest.verifyLeadsPageNavigation()'><b>verifyLeadsPageNavigation</b><br>Test class: Leads.LeadsNavigationTest</td>
+<td></td>
+<td>9</td>
+<td>Leads.LeadsNavigationTest@41a2befb</td></tr>
+<tr>
+<td title='Campaigns.search.SearchCampaignTest.verifyCampaignSearchByName()'><b>verifyCampaignSearchByName</b><br>Test class: Campaigns.search.SearchCampaignTest</td>
+<td></td>
+<td>15</td>
+<td>Campaigns.search.SearchCampaignTest@544fa968</td></tr>
+<tr>
+<td title='Campaigns.crud.CreateCampaignTest.verifyCreateCampaignWithValidData()'><b>verifyCreateCampaignWithValidData</b><br>Test class: Campaigns.crud.CreateCampaignTest</td>
+<td></td>
+<td>24</td>
+<td>Campaigns.crud.CreateCampaignTest@6ad82709</td></tr>
+<tr>
+<td title='Campaigns.smoke.CampaignsPageTest.verifyCampaignsPageNavigation()'><b>verifyCampaignsPageNavigation</b><br>Test class: Campaigns.smoke.CampaignsPageTest</td>
+<td></td>
+<td>6</td>
+<td>Campaigns.smoke.CampaignsPageTest@24313fcc</td></tr>
+<tr>
+<td title='Leads.LeadsPageTest.verifyLeadsSearchControls()'><b>verifyLeadsSearchControls</b><br>Test class: Leads.LeadsPageTest</td>
+<td></td>
+<td>7</td>
+<td>Leads.LeadsPageTest@6c40365c</td></tr>
+<tr>
+<td title='Campaigns.search.CampaignAlphabeticalNavigationTest.verifyAlphabeticalCampaignNavigation()'><b>verifyAlphabeticalCampaignNavigation</b><br>Test class: Campaigns.search.CampaignAlphabeticalNavigationTest</td>
+<td></td>
+<td>52</td>
+<td>Campaigns.search.CampaignAlphabeticalNavigationTest@d35dea7</td></tr>
+<tr>
+<td title='Campaigns.validation.MandatoryFieldsTest.verifyCampaignCannotBeCreatedWithoutMandatoryFields()'><b>verifyCampaignCannotBeCreatedWithoutMandatoryFields</b><br>Test class: Campaigns.validation.MandatoryFieldsTest</td>
+<td></td>
+<td>9</td>
+<td>Campaigns.validation.MandatoryFieldsTest@77f1baf5</td></tr>
+<tr>
+<td title='Campaigns.crud.CampaignPersistenceTest.verifyCampaignListRemainsAvailableAfterNavigation()'><b>verifyCampaignListRemainsAvailableAfterNavigation</b><br>Test class: Campaigns.crud.CampaignPersistenceTest</td>
+<td></td>
+<td>7</td>
+<td>Campaigns.crud.CampaignPersistenceTest@1e800aaa</td></tr>
+</table><p>
+</body>
+</html>

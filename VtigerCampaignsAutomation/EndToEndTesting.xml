@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="End To End Testing" preserve-order="true">
+
+    <test name="Campaign Business Workflow">
+        <classes>
+
+            <!-- Navigate to Campaigns -->
+            <class name="Campaigns.smoke.CampaignNavigationTest"/>
+
+            <!-- Create campaign -->
+            <class name="Campaigns.crud.CreateCampaignTest"/>
+
+            <!-- Search for the created campaign -->
+            <class name="Campaigns.search.SearchCampaignTest"/>
+
+            <!-- View campaign -->
+            <class name="Campaigns.crud.ViewCampaignTest"/>
+
+            <!-- Edit campaign -->
+            <class name="Campaigns.crud.EditCampaignTest"/>
+
+            <!-- Verify saved data persists -->
+            <class name="Campaigns.crud.CampaignPersistenceTest"/>
+
+            <!-- Delete campaign -->
+            <class name="Campaigns.crud.DeleteCampaignTest"/>
+
+        </classes>
+    </test>
+
+</suite>

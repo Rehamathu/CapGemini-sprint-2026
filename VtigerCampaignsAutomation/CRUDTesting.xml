@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="CRUD Testing" preserve-order="true">
+
+    <test name="Campaign CRUD Tests">
+        <classes>
+            <class name="Campaigns.crud.CreateCampaignTest"/>
+            <class name="Campaigns.crud.ViewCampaignTest"/>
+            <class name="Campaigns.crud.EditCampaignTest"/>
+            <class name="Campaigns.crud.DeleteCampaignTest"/>
+            <class name="Campaigns.crud.DuplicateCampaignTest"/>
+            <class name="Campaigns.crud.CampaignPersistenceTest"/>
+        </classes>
+    </test>
+
+</suite>
