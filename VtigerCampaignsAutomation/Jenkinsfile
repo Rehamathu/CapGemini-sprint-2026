@@ -15,7 +15,9 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'mvn clean test'
+                dir('VtigerCampaignsAutomation') {
+                    bat 'mvn clean test'
+                }
             }
         }
     }
@@ -23,7 +25,7 @@ pipeline {
     post {
         always {
             junit allowEmptyResults: true,
-                  testResults: '**/target/surefire-reports/*.xml'
+                  testResults: 'VtigerCampaignsAutomation/target/surefire-reports/*.xml'
         }
     }
 }
