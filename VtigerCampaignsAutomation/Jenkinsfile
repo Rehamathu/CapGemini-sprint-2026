@@ -13,6 +13,16 @@ pipeline {
             }
         }
 
+        stage('Verify Project') {
+            steps {
+                dir('VtigerCampaignsAutomation') {
+                    bat 'dir'
+                    bat 'mvn -version'
+                    bat 'if not exist pom.xml exit /b 1'
+                }
+            }
+        }
+
         stage('Run Tests') {
             steps {
                 dir('VtigerCampaignsAutomation') {
@@ -26,6 +36,10 @@ pipeline {
         always {
             junit allowEmptyResults: true,
                   testResults: 'VtigerCampaignsAutomation/target/surefire-reports/*.xml'
+
+            archiveArtifacts artifacts:
+                'VtigerCampaignsAutomation/target/surefire-reports/**, VtigerCampaignsAutomation/screenshots/**',
+                allowEmptyArchive: true
         }
     }
 }
